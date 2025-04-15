@@ -124,3 +124,44 @@
 
 </body>
 </html>
+
+<button class="transition-button">Lue Lisä</button>
+<
+<style>
+    .transition-button {
+        background-color: rgb(159, 243, 144);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      
+    }
+    .transition-button:hover {
+        background-color: lightcoral;
+    }
+
+    .animation-box {
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+        background-color: rgb(249, 101, 200);
+        animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-30px);
+        }
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+</style>
+<div class="animation-box"></div>
+<img src="WS02_CSS/KUVA" alt="Sample Image" class="filter-image">
+<style>
+</style>
