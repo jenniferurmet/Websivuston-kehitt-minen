@@ -87,6 +87,9 @@
         .instalink a:hover {
             text-decoration: underline;
         }
+        .filter-image {
+            filter: grayscale(50%);
+        }
     </style>
 </head>
 <body>
@@ -141,27 +144,115 @@
         background-color: lightcoral;
     }
 
-    .animation-box {
+    .animation-box {            
         width: 100px;
         height: 100px;
         border-radius: 8px;
         background-color: rgb(249, 101, 200);
         animation: bounce 2s infinite;
-    }
-
+        margin: 20px auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  
     @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-            transform: translateY(0);
-        }
-        40% {
-            transform: translateY(-30px);
-        }
-        60% {
-            transform: translateY(-15px);
-        }
+         0%, 20%, 50%, 80%, 100% {
+             transform: translateY(0);
+         }
+         40% {
+             transform: translateY(-30px);
+         }
+         60% {
+             transform: translateY(-15px);
+         }
+     }
+ </style>
+ <div class="animation-box"></div>
+ <img src="./kuva/ebin.JPG" alt="Sample Image" class="filter-image">
+ <style>
+ </style>
+ 
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSS Grid Example</title>
+   <style>
+     .grid-container {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       grid-template-rows: auto;
+       grid-gap: 10px;
+     }
+     .grid-item {
+       background-color: #8ca0ff;
+       padding: 20px;
+       text-align: center;
+     }
+   </style>
+ </head>
+ <body>
+   <div class="grid-container">
+     <div class="grid-item">1</div>
+     <div class="grid-item">2</div>
+     <div class="grid-item">3</div>
+     <div class="grid-item">4</div>
+     <div class="grid-item">5</div>
+     <div class="grid-item">6</div>
+   </div>
+ </body>
+ </html>
+ <style>.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  .grid-item { 
+
+    background-color: #8ca0ff;
+    padding: 20px;
+    text-align: center;
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+  
+    .responsive-box {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) {
+    .responsive-box {
+      background-color: lightcoral;
     }
-</style>
-<div class="animation-box"></div>
-<img src="./KUVA/ebin.JPG" alt="Sample Image" class="filter-image">
-<style>
-</style>
+  }
+  
+  @media (min-width: 601px) {
+    .responsive-box {
+      background-color: lightseagreen;
+    }
+  }
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>This is a paragraph about me.</p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Copyright 2025</p>
+  </footer>
