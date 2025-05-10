@@ -210,7 +210,16 @@
     background-color: #f0f0f0;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  .grid-item { 
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+    }
+    .grid-item {
+      background-color: #8ca0ff;
+      padding: 20px;
+      text-align: center;
+    }
 
     background-color: #8ca0ff;
     padding: 20px;
@@ -235,18 +244,11 @@
       background-color: lightseagreen;
     }
   }
-  <header>
-    <h1>My Website</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
+    </style>
+
+    
   <main>
+
     <section id="about">
       <h2>About Me</h2>
       <p>This is a paragraph about me.</p>
@@ -256,7 +258,21 @@
   <footer>
     <p>Copyright 2025</p>
   </footer>
-
+    <style>
+        footer {
+        background-color: #f4cfcf;
+        text-align: center;
+        padding: 1px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        }
+        footer p {
+            margin: 0;
+            padding: 10px;
+            color: #2eec47;
+        }
+    </style>
   <div class="container">
       <div class="row">
         <div class="col-md-4 col-12">Column 1</div>
@@ -264,4 +280,48 @@
         <div class="col-md-4 col-12">Column 3</div>
       </div>
     </div>
-      <button class="btn btn-primary">Click Me</button>
+      <button class="btn btn-primary">Click Me</button>.
+        
+            display: flex;
+            
+            <header>
+              <h1>My Website</h1>
+              <nav>
+                <ul>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+            </header>
+            
+            <main>
+              <section id="about">
+                <h2>About Me</h2>
+                <p>This is a paragraph about me.</p>
+              </section>
+            </main>
+            
+            <footer>
+              <p>Copyright 2025</p>
+            </footer>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 col-12">Column 1</div>
+                <div class="col-md-4 col-12">Column 2</div>
+                <div class="col-md-4 col-12">Column 3</div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="path/to/image.jpg" class="card-img-top" alt="Card Image">
+                <div class="card-body">
+                  <h5 class="card-title">Card Title</h5>
+                  <p class="card-text">This is a simple card example using Bootstrap.</p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="alert alert-warning" role="alert">
+              This is a warning alert—check it out!
+            </div>
